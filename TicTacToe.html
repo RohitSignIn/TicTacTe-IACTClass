@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        #ttt_Con>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ttt_Con>div>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.6rem;
+            width: 120px;
+            height: 120px;
+            border: 2px solid green;
+        }
+
+        #ttt_Con>div:nth-child(1)>div:nth-child(1) {
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        #ttt_Con>div:nth-child(1)>div:nth-child(2) {
+            border: none;
+        }
+
+        #ttt_Con>div:nth-child(1)>div:nth-child(3) {
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(2)>div:nth-child(1) {
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(2)>div:nth-child(2) {
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(2)>div:nth-child(3) {
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(3)>div:nth-child(1) {
+            border-left: none;
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(3)>div:nth-child(2) {
+            border-bottom: none;
+            border-right: none;
+        }
+
+        #ttt_Con>div:nth-child(3)>div:nth-child(3) {
+            border-bottom: none;
+            border-right: none;
+        }
+    </style>
+
+
+    <div id="ttt_Con">
+        <div>
+            <div>X</div>
+            <div>O</div>
+            <div>X</div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
